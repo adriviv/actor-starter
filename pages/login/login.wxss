@@ -1,0 +1,52 @@
+/* pages/login/login.wxss */
+.container {
+  height: 100vh;
+  background-color: grey;
+}
+
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+
+  margin-bottom: 90px;
+}
+
+.login {
+  align-items:center;
+}
+.btn {
+  margin-top: 30px;
+}
+
+.box {
+
+  background-color: white;
+  padding: 8px;
+  margin: 5px;
+}
+.section {
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.signin {
+  display: flex;
+  align-items: right;
+}
+
+.signup {
+  display: flex;
+  font-size: 10px;
+  
+}
+
+.credentials {
+  font-size: 10px;
+}
+
+.signuplink {
+  color:blue;
+  margin-left: 3px;
+}

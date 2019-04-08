@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+
+
+<!--input.wxml-->
+
+<view class="container" style="background-image: url(/image/mask.jpg)">
+  <text class="title">ActorStarter</text>
+
+  <view class="section">
+    <text class="login">Please login</text>
+    <input class="box" placeholder="Insert email" focus="{{focus}}" />
+    <input class="box" placeholder="Insert password" focus="{{focus}}" />
+    <view class="btn-area">
+      <button class="btn" bindtap="bindButtonTap">Submit</button>
+    </view>
+    <view class="signup">
+      <text class ="credentials">Don't have credentials please</text>
+      <navigator class="signuplink">Sign up</navigator>
+    </view>
+  </view>
+  
+</view>

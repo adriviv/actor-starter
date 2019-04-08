@@ -1,0 +1,19 @@
+
+<view class="container" style="background-image: url(/image/mask.jpg)">
+  <view class="general">
+    <text class="title">ActorStarter</text>
+
+    <view class="section">
+      <text class="login">Please Sign up</text>
+      <input class="box" placeholder="first name" focus="{{focus}}" />
+      <input class="box" placeholder="last name" focus="{{focus}}" />
+      <input class="box" placeholder="email" focus="{{focus}}" />
+      <input class="box" placeholder="address" focus="{{focus}}" />
+      <input class="box" placeholder="payment info" focus="{{focus}}" />
+
+      <view class="btn-area">
+        <button class="btn" bindtap="bindButtonTap">Submit</button>
+      </view>
+    </view>
+  </view>
+</view>

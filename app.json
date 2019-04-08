@@ -1,13 +1,41 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/signup/signup"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#00028c",
+    "navigationBarTitleText": "ActorStarter",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#00028c",
+    "selectedColor": "white",
+    "borderStyle": "black",
+    "color": "white",
+    "list": [
+      {
+        "pagePath": "pages/signup/signup",
+        "selectedColor" : "white",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home.png"
+      },
+      {
+        "pagePath": "pages/signup/signup",
+        "selectedColor": "white",
+        "iconPath": "image/add.png",
+        "selectedIconPath": "image/add.png"
+      },
+      {
+        "pagePath": "pages/signup/signup",
+        "selectedColor": "white",
+        "iconPath": "image/profile.png",
+        "selectedIconPath": "image/profile.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
