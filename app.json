@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/show/show",
     "pages/new/new",
-    "pages/edit/edit"
+    "pages/edit/edit", 
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

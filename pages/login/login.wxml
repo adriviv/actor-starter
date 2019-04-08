@@ -1,0 +1,9 @@
+ <form bindsubmit="bindSubmit">
+
+  <textarea value="{{email}}" placeholder="email" class="input-height" name="email" maxlength="-1" auto-height />
+
+
+  <textarea value="{{password}}" style="input-size"placeholder="password" class="input-height" name="password" maxlength="-1" auto-height />
+
+  <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+    </form>
