@@ -3,8 +3,9 @@
     "pages/main/main",
     "pages/index/index",
     "pages/show/show",
-    "pages/new/new",
-    "pages/edit/edit"
+    "pages/signup/signup",
+    "pages/edit/edit", 
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,10 +26,10 @@
         "text": "Choose Your Meal"
       },
       {
-        "pagePath": "pages/new/new",
+        "pagePath": "pages/signup/signup",
         "iconPath": "image/submit.png",
         "selectedIconPath": "image/selected-submit.png",
-        "text": "Send Your Restaurant"
+        "text": "signUp"
       }
     ]
   },

@@ -26,9 +26,9 @@ Page({
       method: 'POST',
       data: { user: user },
       success: res => {
-        //wx.navigateTo({
-        // url: '/pages/index/index'
-        //});
+        wx.navigateTo({
+        url: '/pages/index/index'
+        });
       }
     })
   }
