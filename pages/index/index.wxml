@@ -1,3 +1,14 @@
+<view class="btn-area">
+  <navigator url="/pages/login/login" hover-class="navigator-hover">Login</navigator>
+</view>
+
+<view class="btn-area">
+  <navigator url="/pages/signup/signup" hover-class="navigator-hover">Signup</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/login/login" hover-class="navigator-hover">Login</navigator>
+</view>
+
 <view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{project.image}}');" data-project-id="{{project.id}}">
 
   <view>{{project.name}}</view>

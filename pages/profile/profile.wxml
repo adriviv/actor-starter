@@ -1,4 +1,7 @@
 <view>hello</view>
+<view class="btn-area">
+  <navigator url="/pages/create/create" hover-class="navigator-hover">Create a project</navigator>
+</view>
 
 <view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" 
 style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{project.image}}');" data-project-id="{{project.id}}">
@@ -11,8 +14,6 @@ style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(
   <view>rewards: {{project.rewards}} </view>
   <view>objective money raise{{project.amount_objective}} </view>
   <view>video: {{project.video}} </view>
-
-
 
 
 </view>

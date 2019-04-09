@@ -22,7 +22,6 @@ Page({
         'X-User-Email': wx.getStorageSync('email'),
       },
       success: function (res) {
-        console.log(res)
         page.setData({
           projects: res.data.projects
         })

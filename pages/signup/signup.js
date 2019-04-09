@@ -1,6 +1,6 @@
 // pages/new/new.js
 
-var app = getApp()
+var app = getApp();
 Page({
   data: {
     loading: false,
@@ -32,7 +32,7 @@ Page({
       }
     })
   }
-})
+});
 
 
 
