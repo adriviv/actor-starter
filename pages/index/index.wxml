@@ -1,13 +1,15 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{project.image}}');" data-project-id="{{project.id}}">
+
+  <view>{{project.name}}</view>
+  <view>{{project.descritpion}} </view>
+  <view>{{project.image}} </view>
+  <view>{{project.location}} </view>
+  <view>{{project.category}} </view>
+  <view>{{project.rewards}} </view>
+  <view>{{project.amount_objective}} </view>
+  <view>{{project.video}} </view>
+
+
+
+
 </view>

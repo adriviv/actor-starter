@@ -10,11 +10,11 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "Meal Match",
+    "navigationBarTitleText": "Actor Starter",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor": "#32AAE1",
+    "backgroundColor": "#00028c",
     "selectedColor": "white",
     "borderStyle": "black",
     "color": "black",

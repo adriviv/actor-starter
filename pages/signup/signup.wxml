@@ -1,26 +1,32 @@
 <!--pages/edit/edit.wxml-->
-  
+  <view class="container" style="background-image: url(/image/mask.jpg)">
+  <view class="general">
+    <text class="title">ActorStarter</text>
+
+ <view class="section">
+  <text class="login">Please Sign up</text>
+
     <form bindsubmit="bindSubmit">
 
- 
-      <textarea value="{{email}}" placeholder="email" class="input-height" name="email" maxlength="-1" auto-height />
+      <textarea value="{{email}}" placeholder="email" class="box" name="email" maxlength="-1" auto-height />
 
 
-      <textarea value="{{password}}" style="input-size"placeholder="password" class="input-height" name="password" maxlength="-1" auto-height />
+      <textarea value="{{password}}" style="input-size"placeholder="password" class="box" name="password" maxlength="-1" auto-height />
 
 
 
-      <textarea value="{{address}}" style="input-size"placeholder="Address" class="input-height" name="address" maxlength="-1" auto-height />
+      <textarea value="{{address}}" style="input-size"placeholder="Address" class="box" name="address" maxlength="-1" auto-height />
 
 
-      <textarea value="{{first_name}}" style="input-size"placeholder="first_name" class="input-height" name="first_name" maxlength="-1" auto-height />
+      <textarea value="{{first_name}}" style="input-size"placeholder="first_name" class="box" name="first_name" maxlength="-1" auto-height />
 
-      <textarea value="{{last_name}}" style="input-size"placeholder="last_name" class="input-height" name="last_name" maxlength="-1" auto-height />
+      <textarea value="{{last_name}}" style="input-size"placeholder="last_name" class="box" name="last_name" maxlength="-1" auto-height />
 
- <textarea value="{{credit_card_number}}" style="input-size"placeholder="credit_card_number" class="input-height" name="credit_card_number" maxlength="-1" auto-height />
+ <textarea value="{{credit_card_number}}" style="input-size"placeholder="credit_card_number" class="box"  name="credit_card_number" maxlength="-1" auto-height />
 
 
     <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
-    </form>
-
-
+</form>
+    </view>
+  </view>
+</view>
