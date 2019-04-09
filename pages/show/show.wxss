@@ -35,3 +35,46 @@
   margin-bottom: 30px;
 }
 
+
+.navbar {
+  display: flex;
+  margin: 5px;
+} 
+
+.card-product-infos {
+  padding: 16px;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+
+
+.btn-area {
+  color: white;
+  font-weight: bold; 
+  background-color: #6cde89;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.btn-login{
+  position: absolute;
+  right: 20px;
+}
+
+.btn-sign-up {
+  position: absolute;
+  right: 100px;
+}
+
+.logo {
+  margin-left: 20px
+}

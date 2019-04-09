@@ -1,7 +1,6 @@
-<view class="">
 <view class='navbar'>
-  <view>
-   <image class='logo' src='/image/camera.png' style='height: 60px;width: 60px;'></image>
+  <view> 
+    <image class='logo' src='/image/camera.png' style='height: 60px;width: 60px;'></image>
   </view>
   <view class='btn-area btn-sign-up'>
     <navigator url='/pages/signup/signup' hover-class='navigator-hover'>Signup</navigator>
@@ -10,25 +9,22 @@
     <navigator url='/pages/login/login' hover-class='navigator-hover'>Login</navigator>
   </view>
 </view>
-</view>
+
+
       
-<view class="container">     
-<view class="header">
-  <view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('{{image}}');">
-  </view>
 
-    <view class="banner-content">
+<view>
+  <view>name: {{name}}</view>
+  <view>description:{{description}}</view>
+  <view>location {{location}}</view>
+  <view>image: {{image}}</view>
+  <view>category: {{category}}</view>
+  <view>rewards{{rewards}}</view>
+  <view>Goal: {{amount_objective}}</view>
+  <view>video: {{video}}</view>
+  <view>{{date}}</view>
 
-      <view class="h1">{{name}}</view>
-      <view class="tag">{{description}}</view>
-      <view>{{location}}</view>
-      <view>{{date}}</view>
-      
-  
-    </view>
-
-    
-  </view>
 </view>
+
 
 
