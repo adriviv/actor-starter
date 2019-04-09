@@ -1,9 +1,23 @@
+ <view class="container" style="background-image: url(/image/mask.jpg)">
+  <text class="title">ActorStarter</text>
+
+
  <form bindsubmit="bindSubmit">
 
-  <textarea value="{{email}}" placeholder="email" class="input-height" name="email" maxlength="-1" auto-height />
+  <text class="login">Please login</text>
+  <textarea value="{{email}}" placeholder=" Insert email" class="box" name="email" maxlength="-1" auto-height focus="{{focus}}" />
 
 
-  <textarea value="{{password}}" style="input-size"placeholder="password" class="input-height" name="password" maxlength="-1" auto-height />
-
+  <textarea value="{{password}}" style="input-size"placeholder=" Insert password" class="box" name="password" maxlength="-1" auto-height focus="{{focus}}" />
+  
+ <view class="btn-area">
   <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+  </view>
     </form>
+
+    <view class="signup">
+      <text class ="credentials">Don't have credentials please</text>
+      <navigator class="signuplink">Sign up</navigator>
+    </view>
+
+</view>

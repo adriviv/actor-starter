@@ -1,2 +1,10 @@
-<!--pages/show/show.wxml-->
-<text>pages/show/show.wxml</text>
+      <view class="h1">{{name}}</view>
+  <view>{{ descritpion }} </view>
+      <view class="event-info"> {{ location}}</view>
+
+  <view class="h1">{{image}} </view>
+  <view>{{location}} </view>
+  <view>{{category}} </view>
+  <view>{{rewards}} </view>
+  <view>{{amount_objective}} </view>
+  <view>{{video}} </view>
