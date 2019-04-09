@@ -4,7 +4,7 @@
     "pages/index/index",
     "pages/show/show",
     "pages/signup/signup",
-    "pages/edit/edit", 
+    "pages/create/create", 
     "pages/login/login",
     "pages/profile/profile"
   ],
@@ -27,10 +27,10 @@
         "text": "Choose Your Meal"
       },
       {
-        "pagePath": "pages/signup/signup",
+        "pagePath": "pages/profile/profile",
         "iconPath": "image/submit.png",
         "selectedIconPath": "image/selected-submit.png",
-        "text": "signUp"
+        "text": "profile"
       }
     ]
   },
