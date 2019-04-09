@@ -1,13 +1,37 @@
 {
   "pages": [
+    "pages/main/main",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/show/show",
+    "pages/signup/signup",
+    "pages/edit/edit", 
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "Actor Starter",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#00028c",
+    "selectedColor": "white",
+    "borderStyle": "black",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "image/random.png",
+        "selectedIconPath": "image/selected-random.png",
+        "text": "Choose Your Meal"
+      },
+      {
+        "pagePath": "pages/signup/signup",
+        "iconPath": "image/submit.png",
+        "selectedIconPath": "image/selected-submit.png",
+        "text": "signUp"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
