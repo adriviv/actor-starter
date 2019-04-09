@@ -1,26 +1,38 @@
-<view class="btn-area">
-  <navigator url="/pages/login/login" hover-class="navigator-hover">Login</navigator>
-</view>
-
-<view class="btn-area">
+<view class="navbar">
+  <view>
+    <image class="logo" src="/image/camera.png" style="height: 60px;width: 60px;"></image>
+  </view>
+  <view class="btn-area btn-sign-up">
   <navigator url="/pages/signup/signup" hover-class="navigator-hover">Signup</navigator>
 </view>
-<view class="btn-area">
+<view class="btn-area btn-login">
   <navigator url="/pages/login/login" hover-class="navigator-hover">Login</navigator>
 </view>
-
-<view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{project.image}}');" data-project-id="{{project.id}}">
-
-  <view>{{project.name}}</view>
-  <view>{{project.descritpion}} </view>
-  <view>{{project.image}} </view>
-  <view>{{project.location}} </view>
-  <view>{{project.category}} </view>
-  <view>{{project.rewards}} </view>
-  <view>{{project.amount_objective}} </view>
-  <view>{{project.video}} </view>
-
-
-
-
+  
 </view>
+
+<view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" data-project-id="{{project.id}}">
+  
+  <view class="card-product">
+    <view class="image">
+      <image src="https://picsum.photos/200/300/?random" style="/*width;<view><br></view>:*/width: 155px;height: 155px;"></image> 
+      </view>
+    <view class="card-product-infos">
+      <view class="h2">Name: {{project.name}}</view>
+      <view class="p">Description: {{project.description}}</view>
+      <view class="p">Goal: {{project.amount_objective}}</view>
+      <view class="p">Category{{project.category}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
