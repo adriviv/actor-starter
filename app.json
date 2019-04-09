@@ -5,7 +5,8 @@
     "pages/show/show",
     "pages/signup/signup",
     "pages/edit/edit", 
-    "pages/login/login"
+    "pages/login/login",
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
