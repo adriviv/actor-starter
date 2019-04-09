@@ -1,1 +1,45 @@
-/* pages/edit/edit.wxss */
+/* pages/new/new.wxss */
+.h2-header {
+ color: white;
+  font-size: 50rpx; 
+  font-weight: bold;
+  padding: 10px;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Avatar */
+.userinfo-avatar {
+  width:180rpx;
+  height:180rpx;
+  margin:20rpx;
+  border-radius:50%;
+}
+
+/* form style */
+.user-input {
+  width: 100%;
+  margin-bottom: 35rpx;
+}
+.input-height {
+  height: 10em;
+}
+.input-label {
+  font-size: 35rpx;
+}
+
+.text-area-wrap {
+
+  background-color: white;
+  padding: 12px;
+  margin: 2px;
+}
+.user-input {
+  background-color: #ececec;
+  padding: 5px;
+}
+
