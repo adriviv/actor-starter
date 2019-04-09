@@ -1,22 +1,67 @@
 <!--pages/edit/edit.wxml-->
-  <view class="container" style="background-image: url(/image/mask.jpg)">
+  <view class="container" style="background-image: url(/image/create_project.jpg)">
   
-  <view class="general">
-    <text class="title">ActorStarter / Create</text>
+<view class="header">
+  <view class="h2-header">Create Your Project 🎥</view>
+  </view>
+  <view class="container">
+  <view class="wrap">
+  
+    <form bindsubmit="bindSubmit">
 
-    <view class="section">
-      <text class="login">Submit your project</text>
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height" name="name" maxlength="-1" auto-height />
+      </view>
+    </view>
 
-      <form bindsubmit="bindSubmit">
-        <textarea value="{{name}}" placeholder="name" class="box" name="name" maxlength="-1" auto-height />
-        <textarea value="{{description}}" style="input-size"placeholder="description" class="box" name="description" maxlength="-1" auto-height />
-        <textarea value="{{location}}" style="input-size"placeholder="location" class="box" name="location" maxlength="-1" auto-height />
-        <textarea value="{{category}}" style="input-size"placeholder="category" class="box" name="category" maxlength="-1" auto-height />
-        <textarea value="{{rewards}}" style="input-size"placeholder="rewards" class="box" name="rewards" maxlength="-1" auto-height />
-        <textarea value="{{amount_objective}}" style="input-size"placeholder="amount_objective" class="box"  name="amount_objective" maxlength="-1" auto-height />
-        <textarea value="{{video}}" style="input-size"placeholder="video" class="box" name="video" maxlength="-1" auto-height />
-        <textarea value="{{image}}" style="input-size"placeholder="image" class="box" name="image" maxlength="-1" auto-height />
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{description}}" style="input-size"placeholder="Description" class="input-height" name="description" maxlength="-1" auto-height />
+      </view>
+    </view>
 
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{location}}" style="input-size"placeholder="Location" class="input-height" name="location" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{location}}" style="input-size"placeholder="Location" class="input-height" name="location" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{category}}" style="input-size"placeholder="Category" class="input-height" name="category" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{rewards}}" style="input-size"placeholder="Rewards" class="input-height" name="rewards" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{amount_objective}}" style="input-size"placeholder="Amount Objective" class="input-height" name="Amount Objective" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{video}}" style="input-size"placeholder="Video" class="input-height" name="Video" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{image}}" style="input-size"placeholder="Image" class="input-height" name="Image" maxlength="-1" auto-height />
+      </view>
+    </view>
 
         <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
       </form>
