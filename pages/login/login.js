@@ -22,8 +22,12 @@ Page({
       method: 'POST',
       data: { user: user },
       success: res => {
+        console.log(res)
+        wx.setStorageSync('token', res.data.auth_token)
+        wx.setStorageSync('email', user.email)
+
         wx.navigateTo({
-        url: '/pages/index/index'
+        url: '/pages/profile/profile'
         });
       }
     })

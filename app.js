@@ -5,15 +5,6 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
-    wx.login({
-      success: function (res) {
-        if (res.code) {
-        } else {
-          console.log('error' + res.errMsg)
-        }
-      }
-    })
   },
 
   getUserInfo: function (cb) {
