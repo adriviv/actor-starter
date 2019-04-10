@@ -27,10 +27,10 @@
         "text": "Choose Your Meal"
       },
       {
-        "pagePath": "pages/profile/profile",
+        "pagePath": "pages/index/index",
         "iconPath": "image/submit.png",
         "selectedIconPath": "image/selected-submit.png",
-        "text": "profile"
+        "text": "index"
       }
     ]
   },

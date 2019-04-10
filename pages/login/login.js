@@ -4,10 +4,18 @@ var app = getApp()
 Page({
   data: {
     loading: false,
+    userInfo: {},
   },
 
   // Retrieve user info
   onLoad: function () {
+    //console.log('onLoad')
+    // var that = this
+    // app.getUserInfo(function (userInfo) {
+    //   that.setData({
+       //  userInfo: userInfo
+     //  })
+   //  })
   },
 
   // New Restaurant Submission
@@ -22,17 +30,21 @@ Page({
       method: 'POST',
       data: { user: user },
       success: res => {
-        
-        wx.setStorageSync('token', res.data.auth_token)
-        wx.setStorageSync('email', user.email)
+        console.log(res)
 
-        wx.navigateTo({
-        url: '/pages/create/create'
-        });
+        if (res.statusCode !== 400) {
+          wx.setStorageSync('token', res.data.auth_token)
+          wx.setStorageSync('email', user.email)
+          wx.reLaunch({
+            url: '/pages/create/create'
+          });
+        }
+        
+
+        
+
+       
       }
     })
   }
 })
-
-
-
