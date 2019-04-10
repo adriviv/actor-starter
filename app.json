@@ -8,12 +8,6 @@
     "pages/login/login",
     "pages/profile/profile"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "Actor Starter",
-    "navigationBarTextStyle": "black"
-  },
   "tabBar": {
     "backgroundColor": "#00028c",
     "selectedColor": "white",
@@ -21,18 +15,29 @@
     "color": "black",
     "list": [
       {
-        "pagePath": "pages/main/main",
+        "pagePath": "pages/index/index",
         "iconPath": "image/random.png",
         "selectedIconPath": "image/selected-random.png",
-        "text": "Choose Your Meal"
+        "text": "Explore"
       },
       {
-        "pagePath": "pages/index/index",
+          "pagePath": "pages/create/create",
+          "iconPath": "image/random.png",
+          "selectedIconPath": "image/selected-random.png",
+          "text": "Create"
+      },
+      {
+        "pagePath": "pages/profile/profile",
         "iconPath": "image/submit.png",
         "selectedIconPath": "image/selected-submit.png",
-        "text": "index"
+        "text": "profile"
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "white",
+  "navigationBarTitleText": "Actor Starter",
+  "navigationBarTextStyle": "black"
+}
 }

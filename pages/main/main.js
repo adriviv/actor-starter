@@ -2,7 +2,7 @@ Page({
 
   indexRestaurants(e) {
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/index/index'
     });
   }

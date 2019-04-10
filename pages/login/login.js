@@ -20,6 +20,11 @@ Page({
 
   // New Restaurant Submission
   bindSubmit: function (e) {
+  // wx.setStorageSync('userInfo', e.detail.value);
+
+    //console.log(e)
+     //wx.setStorageSync('userInfo', e.detail.userInfo);
+
     let user = {
       email: e.detail.value.email,
       password: e.detail.value.password,
@@ -30,13 +35,12 @@ Page({
       method: 'POST',
       data: { user: user },
       success: res => {
-        console.log(res)
 
         if (res.statusCode !== 400) {
           wx.setStorageSync('token', res.data.auth_token)
           wx.setStorageSync('email', user.email)
           wx.reLaunch({
-            url: '/pages/create/create'
+            url: '/pages/index/index'
           });
         }
         
