@@ -2,7 +2,7 @@ Page({
 
   indexRestaurants(e) {
 
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/index/index'
     });
   }

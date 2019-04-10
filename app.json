@@ -6,7 +6,10 @@
     "pages/signup/signup",
     "pages/create/create", 
     "pages/login/login",
-    "pages/profile/profile"
+    "pages/userindex/userindex",
+    "pages/usershow/usershow",
+    "pages/userprofile/userprofile"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,8 +18,8 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor": "#00028c",
-    "selectedColor": "white",
+    "backgroundColor": "white",
+    "selectedColor": "#6cde89",
     "borderStyle": "black",
     "color": "black",
     "list": [
@@ -24,13 +27,20 @@
         "pagePath": "pages/main/main",
         "iconPath": "image/random.png",
         "selectedIconPath": "image/selected-random.png",
-        "text": "Choose Your Meal"
+        "text": "home"
       },
       {
         "pagePath": "pages/index/index",
         "iconPath": "image/submit.png",
         "selectedIconPath": "image/selected-submit.png",
         "text": "index"
+      },
+
+      {
+        "pagePath": "pages/userindex/userindex",
+        "iconPath": "image/submit.png",
+        "selectedIconPath": "image/selected-submit.png",
+        "text": "profilke"
       }
     ]
   },

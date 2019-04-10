@@ -1,24 +1,38 @@
- <view class="container" style="background-image: url(/image/mask.jpg)">
-  <text class="title">ActorStarter</text>
-
-
- <form bindsubmit="bindSubmit">
-
-  <text class="login">Please login</text>
-  <textarea value="{{email}}" placeholder=" Insert email" class="box" name="email" maxlength="-1" auto-height focus="{{focus}}" />
-
-
-  <textarea value="{{password}}" style="input-size"placeholder=" Insert password" class="box" name="password" maxlength="-1" auto-height focus="{{focus}}" />
-  
- <view class="btn-area">
-  <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+<!--header-->
+<view class="general-session">
+  <view>
+    <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
+    </image>   
   </view>
-    </form>
+  <view class="welcome-card">
+    <text class="welcome">Welcome, please:</text>
+    <view class="btns">
+      <navigator class="small-btn" url="/pages/signup/signup" hover-class="navigator-hover">Sign up
+      </navigator>
+      <navigator class="small-btn" url="/pages/login/login" hover-class="navigator-hover">Login
+      </navigator>
+    </view>
+  </view>
+</view>
+<!--header finish-->
 
+<!--login form starts-->
+<view class="container">
+  <view class="section">
+    <text class="login">Please login
+    </text>
+  <form bindsubmit="bindSubmit">
+    <textarea value="{{email}}" placeholder=" Insert email" class="box" name="email" maxlength="-1" auto-height focus="{{focus}}" />
+    <textarea value="{{password}}" style="input-size"placeholder=" Insert password" class="box" name="password" maxlength="-1" auto-height focus="{{focus}}" />
+      <view class="btn-area">
+        <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit
+        </button>
+      </view>
+    </form>
     <view class="signup">
       <text class ="credentials">Don't have credentials please</text>
-      <navigator class="signuplink">Sign up</navigator>
+      <navigator class="signuplink" url="/pages/signup/signup">Sign up</navigator>
     </view>
-
+    </view>
 </view>
-
+<!--login form finishes-->

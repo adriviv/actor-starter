@@ -1,15 +1,21 @@
-<view class="navbar">
+
+<view class="general-session">
   <view>
-    <image class="logo" src="/image/camera.png" style="height: 60px;width: 60px;"></image>
+    <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
+    </image>   
   </view>
-  <view class="btn-area btn-sign-up">
-  <navigator url="/pages/signup/signup" hover-class="navigator-hover">Signup</navigator>
+
+  <view class="welcome-card">
+    <text class="welcome">Welcome, please:</text>
+    <view class="btns">
+      <navigator class="small-btn" url="/pages/signup/signup" hover-class="navigator-hover">Sign up
+      </navigator>
+      <navigator class="small-btn" url="/pages/login/login" hover-class="navigator-hover">Login
+      </navigator>
+    </view>
+  </view>
 </view>
-<view class="btn-area btn-login">
-  <navigator url="/pages/login/login" hover-class="navigator-hover">Login</navigator>
-</view>
-  
-</view>
+
 
 <view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" data-project-id="{{project.id}}">
   
@@ -17,7 +23,7 @@
     <view class="image">
       <image src="https://picsum.photos/200/300/?random" style="/*width;<view><br></view>:*/width: 155px;height: 155px;"></image> 
       </view>
-    <view class="card-product-infos">
+    <view class="card-product-info">
       <view class="h2">Name: {{project.name}}</view>
       <view class="p">Description: {{project.description}}</view>
       <view class="p">Goal: {{project.amount_objective}}</view>

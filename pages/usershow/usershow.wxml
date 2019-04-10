@@ -1,0 +1,39 @@
+<view class="user-session">
+  <view>
+    <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
+    </image>   
+  </view>
+
+  <view class="welcome-card">
+    <text class="welcome">Welcome</text>
+    <text class="email">Luke@email.com</text>
+    <view class="btns">
+      <navigator class="small-btn" url="/pages/signup/signup" hover-class="navigator-hover">Sign Out
+      </navigator>
+      <navigator class="small-btn" url="/pages/userprofile/userprofile" hover-class="navigator-hover">Edit
+      </navigator>
+    </view>
+  </view>
+
+  <view>
+    <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/lukeharris727" >
+    </image>
+  </view> 
+
+</view>
+
+
+
+<view>
+  <view>name: {{name}}</view>
+  <view>description:{{description}}</view>
+  <view>location {{location}}</view>
+  <view>image: {{image}}</view>
+  <view>category: {{category}}</view>
+  <view>rewards{{rewards}}</view>
+  <view>Goal: {{amount_objective}}</view>
+  <view>video: {{video}}</view>
+  <view>{{date}}</view>
+</view>
+
+

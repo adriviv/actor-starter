@@ -1,6 +1,6 @@
 /** User Session TopBar **/
 
-.general-session {
+.user-session {
   display: flex;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -13,18 +13,30 @@
 }
 
 .welcome-card {
+
   position: absolute;
-  right: 30px;
+  right: 80px;
 }
 
 .welcome {
-  font-size: 12px;
   padding: 0;
   margin: 0;
 }
 
 .btns {
   display: flex;
+  margin-left: 65px;
+}
+
+.welcome {
+  font-size: 9px;
+  margin: 0;
+}
+
+.email {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 3px;
 }
 
 .small-btn {
@@ -37,36 +49,37 @@
   border-radius: 5px;
   margin-left: 4px;
 }
+
+.avatar-large {
+  position: absolute;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
 /** finish User Session TopBar design**/
 
-/** Card Product **/
+/** start Sign Up Form **/
 
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  margin: 10px; 
+.container {
+  height: 100vh;
 }
 
-.h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+.section {
+  margin-top: 50px;
+  background-color: #ececec;
+  padding: 20px;
 }
 
-.p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+.box {
+  background-color: white;
+  padding: 8px;
+  margin: 5px;
 }
 
-.card-product-info {
-  padding: 16px;
+.submit-btn {
+  margin-top: 40px;
 }
 
-/** finish Card Product design**/
+/** finish Sign Up Form **/

@@ -1,25 +1,31 @@
-<!--header-->
-<view class="general-session">
+<view class="user-session">
   <view>
     <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
     </image>   
   </view>
+
   <view class="welcome-card">
-    <text class="welcome">Welcome, please:</text>
+    <text class="welcome">Welcome</text>
+    <text class="email">Luke@email.com</text>
     <view class="btns">
-      <navigator class="small-btn" url="/pages/signup/signup" hover-class="navigator-hover">Sign up
+      <navigator class="small-btn" url="/pages/index/index" hover-class="navigator-hover">Sign Out
       </navigator>
-      <navigator class="small-btn" url="/pages/login/login" hover-class="navigator-hover">Login
+      <navigator class="small-btn" url="/pages/userprofile/userprofile" hover-class="navigator-hover">Edit
       </navigator>
     </view>
   </view>
-</view>
-<!--header finish-->
 
-<!--start Sign Up form-->
+  <view>
+    <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/lukeharris727" >
+    </image>
+  </view> 
+
+</view>
+
+<!--User profile update form-->
 <view class="container">
   <view class="section">
-    <text class="Signup">Please Sign up
+    <text class="Signup">Profile:
     </text>
     <form bindsubmit="bindSubmit">
       <textarea value="{{email}}" placeholder="email" class="box" name="email" maxlength="-1" auto-height />
@@ -28,9 +34,9 @@
       <textarea value="{{first_name}}" style="input-size"placeholder="first_name" class="box" name="first_name" maxlength="-1" auto-height />
       <textarea value="{{last_name}}" style="input-size"placeholder="last_name" class="box" name="last_name" maxlength="-1" auto-height />
 <textarea value="{{credit_card_number}}" style="input-size"placeholder="credit_card_number" class="box"  name="credit_card_number" maxlength="-1" auto-height />
-      <button  class="submit-btn" style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit
+      <button  class="submit-btn" style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Update if needed
       </button>
     </form>
   </view>
 </view>
-<!--finish Sign Up form-->
+<!--User profile update form-->>

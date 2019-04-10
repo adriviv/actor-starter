@@ -1,30 +1,37 @@
-<view class='navbar'>
-  <view> 
-    <image class='logo' src='/image/camera.png' style='height: 60px;width: 60px;'></image>
+
+<view class="general-session">
+  <view>
+    <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
+    </image>   
   </view>
-  <view class='btn-area btn-sign-up'>
-    <navigator url='/pages/signup/signup' hover-class='navigator-hover'>Signup</navigator>
-  </view>
-  <view class='btn-area btn-login'>
-    <navigator url='/pages/login/login' hover-class='navigator-hover'>Login</navigator>
+
+  <view class="welcome-card">
+    <text class="welcome">Welcome, please:</text>
+    <view class="btns">
+      <navigator class="small-btn" url="/pages/signup/signup" hover-class="navigator-hover">Sign up
+      </navigator>
+      <navigator class="small-btn" url="/pages/login/login" hover-class="navigator-hover">Login
+      </navigator>
+    </view>
   </view>
 </view>
 
 
       
 
-<view>
-  <view>name: {{name}}</view>
-  <view>description:{{description}}</view>
-  <view>location {{location}}</view>
-  <view>image: {{image}}</view>
-  <view>category: {{category}}</view>
-  <view>rewards{{rewards}}</view>
-  <view>Goal: {{amount_objective}}</view>
-  <view>video: {{video}}</view>
-  <view>{{date}}</view>
-
+<view class="card-product">
+  <view class="image">
+    <image src="https://picsum.photos/200/300/?random" class="project-img">
+    </image>
+  </view>
+  <view class="h2">Name: {{name}}</view>
+  <view class="p">Description:{{description}}</view>
+  <view class="p">Location {{location}}</view>
+  <view class="p">Image: {{image}}</view>
+  <view class="p">Category: {{category}}</view>
+  <view class="p">Rewards{{rewards}}</view>
+  <view class="p">Goal: {{amount_objective}}</view>
+  <view class="p">Video: {{video}}</view>
+  <view class="p">Date: {{date}}</view>
 </view>
-
-
 

@@ -1,51 +1,64 @@
-/* pages/signup/signup.wxss */
+/** User Session TopBar **/
+
+.general-session {
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+} 
+
+.logo {
+  margin-left: 10px;
+}
+
+.welcome-card {
+  position: absolute;
+  right: 30px;
+}
+
+.welcome {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.btns {
+  display: flex;
+}
+
+.small-btn {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold; 
+  background-color: #09BB07;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+/** finish User Session TopBar design**/
+
+/** start Sign Up Form **/
+
 .container {
   height: 100vh;
 }
 
-
-.title {
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-.login {
-  align-items:center;
-}
-.btn {
-  margin-top: 20px;
-}
-
-.box {
-
-  background-color: white;
-  padding: 8px;
-  margin: 5px;
-}
 .section {
+  margin-top: 50px;
   background-color: #ececec;
   padding: 20px;
 }
 
-.signin {
-  display: flex;
-  align-items: right;
+.box {
+  background-color: white;
+  padding: 8px;
+  margin: 5px;
 }
 
-.signup {
-  display: flex;
-  font-size: 10px;
-  
+.submit-btn {
+  margin-top: 40px;
 }
 
-.credentials {
-  font-size: 10px;
-}
-
-.signuplink {
-  color:blue;
-  margin-left: 3px;
-}
-
+/** finish Sign Up Form **/

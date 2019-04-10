@@ -1,6 +1,6 @@
 /** User Session TopBar **/
 
-.general-session {
+.user-session {
   display: flex;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -13,18 +13,32 @@
 }
 
 .welcome-card {
+
   position: absolute;
-  right: 30px;
+  right: 80px;
 }
 
 .welcome {
-  font-size: 12px;
   padding: 0;
   margin: 0;
 }
 
 .btns {
   display: flex;
+  margin-left: 65px;
+}
+
+
+
+.welcome {
+  font-size: 9px;
+  margin: 0;
+}
+
+.email {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 3px;
 }
 
 .small-btn {
@@ -37,16 +51,13 @@
   border-radius: 5px;
   margin-left: 4px;
 }
+
+.avatar-large {
+  position: absolute;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
 /** finish User Session TopBar design**/
-
-.project-img {
-  margin: 10px;
-  width: 100%;
-}
-
-.h2{
-
-}
-.p{
-
-}
