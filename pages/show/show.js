@@ -18,58 +18,44 @@ Page({
       success: res => {
         page.setData(res.data)
         //wx.setNavigationBarTitle({
-         // title: page.data.name,
-        
+         // title: page.data.name,   
       }
     })
+ 
+
+      wx.request({
+        url: `http://localhost:3000/api/v1/projects/${options.id}/pledges`,
+        method: 'GET',
+        success(res) {
+      
+          //restaurants: res.data.restaurants;
+
+          // Update local data
+          console.log(res.data)
+          page.setData(res.data)
+        },
+      });
+  
   },
 
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
+  bindSubmit: function (e) {
+    let pledge = {
+      amount: e.detail.value.amount
+    }
+    console.log(e)
+    wx.request({
+      url: `http://localhost:3000/api/v1/projects/${this.data.id}/pledges`,
+      method: 'POST',
+      header: {
+        'X-User-Token': wx.getStorageSync('token'),
+        'X-User-Email': wx.getStorageSync('email'),
+      },
+      data: { pledge: pledge },
+      success: res => {
+        wx.reLaunch({
+          url: '/pages/index/index'
+        });
+      }
+    })
   }
 })

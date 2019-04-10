@@ -22,9 +22,23 @@
   <view>rewards{{rewards}}</view>
   <view>Goal: {{amount_objective}}</view>
   <view>video: {{video}}</view>
-  <view>{{date}}</view>
+
+   
 
 </view>
 
+<view>
+  <form bindsubmit="bindSubmit">
+ <textarea value="{{amount}}" style="input-size"placeholder="Place your donation" class="box" name="amount" maxlength="-1" auto-height />
+    <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+    </form>
+  </view>
+
+<view>Total raised : ${{total}} </view>
 
 
+
+
+<!-- <view wx:for="{{pledges}}" wx:for-item="pledge" wx:key="pledge.id" class="card" data-project-id="{{pledge.id}}">
+<view class="h2">amount: {{pledge.amount}}</view>
+</view>
