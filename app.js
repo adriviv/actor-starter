@@ -13,6 +13,8 @@ App({
       typeof cb == "function" && cb(this.globalData.userInfo)
     } else {
       //调用登录接口
+      // wx.login({
+       // success: function () {
       wx.getUserInfo({
         withCredentials: false,
         success: function (res) {
@@ -20,6 +22,8 @@ App({
           typeof cb == "function" && cb(that.globalData.userInfo)
         }
       })
+        // }
+      // })
     }
   },
 

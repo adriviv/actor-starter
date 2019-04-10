@@ -30,8 +30,9 @@ Page({
       },
       data: { project: project },
       success: res => {
-        wx.navigateTo({
-          url: '/pages/index/index'
+        console.log(res)
+        wx.reLaunch({
+          url: '/pages/profile/profile'
         });
       }
     })

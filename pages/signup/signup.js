@@ -1,5 +1,3 @@
-// pages/new/new.js
-
 var app = getApp();
 Page({
   data: {
@@ -26,8 +24,8 @@ Page({
       method: 'POST',
       data: { user: user },
       success: res => {
-        wx.navigateTo({
-        url: '/pages/index/index'
+        wx.reLaunch({
+          url: '/pages/index/index'
         });
       }
     })
