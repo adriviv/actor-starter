@@ -18,14 +18,12 @@ Page({
         //restaurants: res.data.restaurants;
 
         // Update local data
-        console.log(res.data)
         page.setData(res.data)
       },
     });
   },
     showProject: function (e) {
       const data = e.currentTarget.dataset;
-      console.log(data)
       const projectId = data.projectId;
 
       wx.navigateTo({

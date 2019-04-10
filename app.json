@@ -4,7 +4,7 @@
     "pages/index/index",
     "pages/show/show",
     "pages/signup/signup",
-    "pages/create/create", 
+    "pages/create/create",
     "pages/login/login",
     "pages/profile/profile"
   ],
@@ -21,10 +21,10 @@
         "text": "Explore"
       },
       {
-          "pagePath": "pages/create/create",
-          "iconPath": "image/random.png",
-          "selectedIconPath": "image/selected-random.png",
-          "text": "Create"
+        "pagePath": "pages/create/create",
+        "iconPath": "image/random.png",
+        "selectedIconPath": "image/selected-random.png",
+        "text": "Create"
       },
       {
         "pagePath": "pages/profile/profile",
@@ -34,10 +34,11 @@
       }
     ]
   },
-"window": {
-  "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "white",
-  "navigationBarTitleText": "Actor Starter",
-  "navigationBarTextStyle": "black"
-}
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "Actor Starter",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }
