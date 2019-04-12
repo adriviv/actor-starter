@@ -1,68 +1,73 @@
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  margin: 10px; 
-}
+/** User Session TopBar **/
 
-
-
-.h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.navbar {
-  display: flex;
-  margin: 5px;
-} 
-
-.card-product-infos {
-  padding: 16px;
-}
-
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
-
-.navbar-collapse {
-  flex-grow: 0;
-}
-
-
-
-.btn-area {
-  color: white;
-  font-weight: bold; 
-  background-color: #6cde89;
-  padding: 10px;
-  margin: 3px;
-  border-radius: 5px;
-}
-
-.btn-login{
-  position: absolute;
-  right: 20px;
-}
-
-.btn-sign-up {
-  position: absolute;
-  right: 100px;
+.general-session {
+ display: flex;
+ border-bottom: 1px solid rgba(0,0,0,0.2);
+ box-shadow: 0 0 10px rgba(0,0,0,0.2);
+ position: sticky;
+ background-color: white;
+ top: 0;
 }
 
 .logo {
-  margin-left: 20px
+ margin-left: 10px;
 }
+
+.welcome-card {
+ position: absolute;
+ right: 30px;
+}
+
+.welcome {
+ font-size: 12px;
+ padding: 0;
+ margin: 0;
+}
+
+.btns {
+ display: flex;
+}
+
+.small-btn {
+ color: white;
+ text-align: left;
+ font-size: 12px;
+ font-weight: bold;
+ background-color: #09BB07;
+ padding: 4px;
+ border-radius: 5px;
+ margin-left: 4px;
+}
+/** finish User Session TopBar design**/
+
+/** Card Product **/
+
+.card-product {
+ overflow: hidden;
+ height: 120px;
+ background: white;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ display: flex;
+ align-items: center;
+ margin: 10px;
+}
+
+.h2 {
+ font-size: 16px;
+ font-weight: bold;
+ margin: 0;
+}
+
+.p {
+ font-size: 12px;
+ line-height: 1.4;
+ opacity: .7;
+ margin-bottom: 0;
+ margin-top: 8px;
+}
+
+.card-product-infos {
+ padding: 16px;
+}
+
+/** finish Card Product design**/

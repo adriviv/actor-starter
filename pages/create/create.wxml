@@ -1,66 +1,43 @@
-<!--pages/edit/edit.wxml-->
-
-<view class="container" style="background-image: url(/image/create_project.jpg)">
-
-<view class="header">
-  <view class="h2-header">Create Your Project 🎥</view>
-</view>
-
-<view class="container">
-  <view class="wrap">
-  <form bindsubmit="bindSubmit">
-    <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{name}}" placeholder="name" class="box" name="name" maxlength="-1" auto-height />
-      </view>
+<view class="user-session">
+  <view>
+    <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
+    </image>   
+  </view>
+  <view class="welcome-card">
+    <text class="welcome">Welcome</text>
+    <text class="email">Luke@email.com</text>
+    <view class="btns">
+      <navigator class="small-btn" url="/pages/index/index" hover-class="navigator-hover">Sign Out
+      </navigator>
+      <navigator class="small-btn" url="/pages/userprofile/userprofile" hover-class="navigator-hover">Edit
+      </navigator>
     </view>
-
-     <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{description}}" style="input-size"placeholder="description" class="box" name="description" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-     <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{location}}" style="input-size"placeholder="location" class="box" name="location" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-     <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{category}}" style="input-size"placeholder="category" class="box" name="category" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-     <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{rewards}}" style="input-size"placeholder="rewards" class="box" name="rewards" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-     <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{amount_objective}}" style="input-size"placeholder="amount_objective" class="box"  name="amount_objective" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-    <view class="user-input">
-      <view class="text-area-wrap">
-        <textarea value="{{video}}" style="input-size"placeholder="video" class="box" name="video" maxlength="-1" auto-height />
-      </view>
-    </view>
-      
-
-    <view class="user-input">
-      <view class="text-area-wrap">
-         <textarea value="{{image}}" style="input-size"placeholder="image" class="box" name="image" maxlength="-1" auto-height />
-      </view>
-    </view>
-        
-    <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
-    </form>
+  </view>
+  <view>
+    <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/lukeharris727" >
+    </image>
   </view> 
 </view>
-</view>
-  
+<!--Session header finishes-->
+
+<!--create form starts-->
+<view class="container">
+  <view class="section">
+    <text class="login">Submit your project
+    </text>
+    <form bindsubmit="bindSubmit">
+      <textarea value="{{name}}" placeholder="name" class="box" name="name" maxlength="-1" auto-height />
+      <textarea value="{{description}}" style="input-size"placeholder="description" class="box" name="description" maxlength="-1" auto-height />
+      <textarea value="{{location}}" style="input-size"placeholder="location" class="box" name="location" maxlength="-1" auto-height />
+      <textarea value="{{category}}" style="input-size"placeholder="category" class="box" name="category" maxlength="-1" auto-height />
+      <textarea value="{{rewards}}" style="input-size"placeholder="rewards" class="box" name="rewards" maxlength="-1" auto-height />
+      <textarea value="{{amount_objective}}" style="input-size"placeholder="amount_objective" class="box"  name="amount_objective" maxlength="-1" auto-height />
+      <textarea value="{{video}}" style="input-size"placeholder="video" class="box" name="video" maxlength="-1" auto-height />
+      <textarea value="{{image}}" style="input-size"placeholder="image" class="box" name="image" maxlength="-1" auto-height />
+      <button class="submit-btn" style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit
+      </button>
+    </form>
+  </view>
+</view> 
+
+<!--create form finishes-->

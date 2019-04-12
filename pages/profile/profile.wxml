@@ -1,19 +1,49 @@
-<view>hello</view>
+<view class="user-session">
+ <view>
+   <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
+   </image>
+ </view>
+
+ <view class="welcome-card">
+   <text class="welcome">Welcome</text>
+   <text class="email">Luke@email.com</text>
+   <view class="btns">
+     <navigator class="small-btn" url="/pages/index/index" hover-class="navigator-hover">Sign Out
+     </navigator>
+     <navigator class="small-btn" url="/pages/userprofile/userprofile" hover-class="navigator-hover">Edit
+     </navigator>
+   </view>
+ </view>
+
+ <view>
+   <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/lukeharris727" >
+   </image>
+ </view>
+</view>
+
+
 <view class="btn-area">
   <navigator url="/pages/create/create" hover-class="navigator-hover">Create a project</navigator>
 </view>
 
-<view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" 
-style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{project.image}}');" data-project-id="{{project.id}}">
-
-  <view>project name: {{project.name}}</view>
-  <view>description: {{project.description}} </view>
-  <view>image: {{project.image}} </view>
-  <view>location: {{project.location}} </view>
-  <view>category: {{project.category}} </view>
-  <view>rewards: {{project.rewards}} </view>
-  <view>objective money raise{{project.amount_objective}} </view>
-  <view>video: {{project.video}} </view>
 
 
+
+
+<view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" data-project-id="{{project.id}}">
+ <view class="card-product">
+   <view class="image">
+     <image src="https://picsum.photos/200/300/?random" style="/*width;<view><br></view>:*/width: 155px;height: 155px;"></image>
+   </view>
+   <view class="card-product-info">
+     <view class="h2">Name: {{project.name}}</view>
+     <view class="p1">Description: {{project.description}}</view>
+     <view class="p1">Goal: {{project.amount_objective}} USD</view>
+     <view class="p1">Category: {{project.category}}</view>
+     <view class="p2">Money Raised: {{total}} USD</view>
+   </view>
+ </view>
 </view>
+
+
+
