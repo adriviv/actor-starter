@@ -35,7 +35,7 @@ Page({
       method: 'POST',
       data: { user: user },
       success: res => {
-
+        console.log(res)
         if (res.statusCode !== 400) {
           wx.setStorageSync('token', res.data.auth_token)
           wx.setStorageSync('email', user.email)

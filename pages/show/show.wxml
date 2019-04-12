@@ -21,13 +21,13 @@
 <view class="card-product">
 
  <view class="image">
-    <image src="https://picsum.photos/200/300/?random" class="project-img">
+    <image src="{{image}}" class="project-img">
   </image>
   </view>
   <view>name: {{name}}</view>
   <view>description:{{description}}</view>
   <view>location {{location}}</view>
-  <view>image: {{image}}</view>
+
   <view>category: {{category}}</view>
   <view>rewards{{rewards}}</view>
   <view>Goal: {{amount_objective}}</view>

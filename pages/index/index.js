@@ -4,11 +4,21 @@ const app = getApp()
 
 Page({
   data: {
-    
+    user: wx.getStorageSync('email')
   },
   //事件处理函数
 
+  
+
+
+
+
+
   onLoad: function (options) {
+
+
+
+
     let page = this; 
 
     wx.request({
