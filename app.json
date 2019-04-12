@@ -9,8 +9,8 @@
     "pages/profile/profile"
   ],
   "tabBar": {
-    "backgroundColor": "#00028c",
-    "selectedColor": "white",
+    "backgroundColor": "#c4c4c4",
+    "selectedColor": "#09BB07",
     "borderStyle": "black",
     "color": "black",
     "list": [
@@ -18,7 +18,7 @@
         "pagePath": "pages/index/index",
         "iconPath": "image/random.png",
         "selectedIconPath": "image/selected-random.png",
-        "text": "Explore"
+        "text": "Index"
       },
       {
         "pagePath": "pages/create/create",
