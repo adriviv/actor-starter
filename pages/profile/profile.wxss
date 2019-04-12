@@ -1,1 +1,101 @@
-/* pages/profile/profile.wxss */
+/** User Session TopBar **/
+
+.user-session {
+ display: flex;
+ border-bottom: 1px solid rgba(0,0,0,0.2);
+ box-shadow: 0 0 10px rgba(0,0,0,0.2);
+ position: sticky;
+ top: 0;
+}
+
+.logo {
+ margin-left: 10px;
+}
+
+.welcome-card {
+
+ position: absolute;
+ right: 80px;
+}
+
+.welcome {
+ padding: 0;
+ margin: 0;
+}
+
+.btns {
+ display: flex;
+ margin-left: 65px;
+}
+
+.welcome {
+ font-size: 9px;
+ margin: 0;
+}
+
+.email {
+ font-size: 15px;
+ font-weight: bold;
+ margin-left: 3px;
+}
+
+.small-btn {
+ color: white;
+ text-align: left;
+ font-size: 12px;
+ font-weight: bold;
+ background-color: #09BB07;
+ padding: 4px;
+ border-radius: 5px;
+ margin-left: 4px;
+}
+
+.avatar-large {
+ position: absolute;
+ right: 10px;
+ height: 60px;
+ width: 60px;
+ border-radius: 50%;
+}
+
+/** finish User Session TopBar design**/
+
+/** User Project Card  **/
+
+.card-product {
+ overflow: hidden;
+ height: 120px;
+ background: white;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ display: flex;
+ align-items: center;
+ margin: 10px;
+}
+
+.h2 {
+ font-size: 16px;
+ font-weight: bold;
+ margin: 0;
+}
+
+.p1 {
+ font-size: 12px;
+ line-height: 1.4;
+ opacity: .7;
+ margin-bottom: 0;
+ margin-top: 8px;
+}
+
+.card-product-info {
+ padding: 16px;
+}
+
+.p2 {
+ font-size: 14px;
+ font-weight: bold;
+ color: #09BB07;
+ margin-top: 8px;
+ margin-bottom: 5px;
+}
+
+/** finish User Project Card design**/
