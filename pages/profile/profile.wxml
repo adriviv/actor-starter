@@ -1,25 +1,11 @@
 <view class="user-session">
  <view>
-   <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
-   </image>
+   <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;"></image>
  </view>
-
- <view class="welcome-card">
-   <text class="welcome">Welcome</text>
-   <text class="email">Luke@email.com</text>
-   <view class="btns">
-     <navigator class="small-btn" url="/pages/index/index" hover-class="navigator-hover">Sign Out
-     </navigator>
-     <navigator class="small-btn" url="/pages/userprofile/userprofile" hover-class="navigator-hover">Edit
-     </navigator>
-   </view>
- </view>
-
- <view>
-   <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/lukeharris727" >
-   </image>
- </view>
+  <view>Welcome {{user}}</view>
+ <view><button bindtap='SignOut' style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">SIGNOUT</button></view>
 </view>
+
 
 
 <view class="btn-area">
@@ -28,12 +14,10 @@
 
 
 
-
-
 <view wx:for="{{projects}}" wx:for-item="project" wx:key="project.id" bindtap="showProject" class="card" data-project-id="{{project.id}}">
  <view class="card-product">
    <view class="image">
-     <image src="https://picsum.photos/200/300/?random" style="/*width;<view><br></view>:*/width: 155px;height: 155px;"></image>
+     <image src="{{project.image}}" style="/*width;<view><br></view>:*/width: 155px;height: 155px;"></image>
    </view>
    <view class="card-product-info">
      <view class="h2">Name: {{project.name}}</view>

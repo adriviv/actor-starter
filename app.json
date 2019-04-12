@@ -22,7 +22,7 @@
       },
       {
         "pagePath": "pages/create/create",
-        "iconPath": "image/random.png",
+        "iconPath": "image/edit.png",
         "selectedIconPath": "image/selected-random.png",
         "text": "Create"
       },

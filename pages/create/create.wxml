@@ -1,23 +1,5 @@
-<view class="user-session">
-  <view>
-    <image class="logo" src="/image/ASlogo1.jpg" style="height: 60px;width: 60px;">
-    </image>   
-  </view>
-  <view class="welcome-card">
-    <text class="welcome">Welcome</text>
-    <text class="email">Luke@email.com</text>
-    <view class="btns">
-      <navigator class="small-btn" url="/pages/index/index" hover-class="navigator-hover">Sign Out
-      </navigator>
-      <navigator class="small-btn" url="/pages/userprofile/userprofile" hover-class="navigator-hover">Edit
-      </navigator>
-    </view>
-  </view>
-  <view>
-    <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/lukeharris727" >
-    </image>
-  </view> 
-</view>
+<view>Welcome {{user}}</view>
+
 <!--Session header finishes-->
 
 <!--create form starts-->

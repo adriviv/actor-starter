@@ -52,10 +52,24 @@ Page({
       },
       data: { pledge: pledge },
       success: res => {
-        wx.reLaunch({
-          url: '/pages/index/index'
-        });
+        console.log(res)
+        if (res.statusCode == 401) {
+          wx.reLaunch({
+            url: '/pages/login/login'
+          });
+        } else {
+          wx.showToast({
+            title: 'Succeed',
+            icon: 'success',
+            duration: 3000
+          });
+          setTimeout(function () {
+            wx.reLaunch({
+              url: '/pages/index/index',
+            })
+          }, 1500);
+       }
       }
     })
-  }
+  },
 })

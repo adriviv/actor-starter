@@ -5,14 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-    event: {}
+    event: {},
+    user: wx.getStorageSync('email')
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+
+  SignOut: function (e) {
+
+    wx.removeStorage({
+      key: 'token',
+      key: 'email',
+      success: function (res) {
+        console.log(res.data)
+        wx.reLaunch({
+          url: '/pages/index/index'
+        });
+      }
+    })
+  },
+          
+
+
   onLoad: function (options) {
     let page = this;
+   
 
     wx.request({
       url: `http://localhost:3000/api/v1/initiatives`,
@@ -22,9 +42,15 @@ Page({
         'X-User-Email': wx.getStorageSync('email'),
       },
       success: function (res) {
+        if (res.statusCode == 401) {
+          wx.reLaunch({
+            url: '/pages/login/login'
+          });
+        } else {
         page.setData({
           projects: res.data.projects
         })
+      }
       }
     })
   },
@@ -40,7 +66,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+   
   },
 
   /**

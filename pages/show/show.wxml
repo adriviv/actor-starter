@@ -20,8 +20,8 @@
 <view class="container">
 <view class="card-product">
  <view class="image">
-    <image src="https://picsum.photos/200/300/?random" class="project-img">
-    </image>
+
+ <image src="{{image}}" class="project-img"> </image></view>
   <view Class="info">
     </view>
     <view class="box">Name: {{name}}

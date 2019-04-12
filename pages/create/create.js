@@ -2,6 +2,7 @@ var app = getApp()
 Page({
   data: {
     loading: false,
+    user: wx.getStorageSync('email')
   },
 
   // Retrieve user info
@@ -30,10 +31,22 @@ Page({
       },
       data: { project: project },
       success: res => {
-        console.log(res)
-        wx.reLaunch({
-          url: '/pages/profile/profile'
-        });
+        if (res.statusCode == 401) {
+          wx.reLaunch({
+            url: '/pages/login/login'
+          });
+        } else {
+          wx.showToast({
+            title: 'Succeed',
+            icon: 'success',
+            duration: 3000
+          });
+          setTimeout(function () {
+            wx.reLaunch({
+              url: '/pages/index/index',
+            })
+          }, 1500);
+        }
       }
     })
   }
