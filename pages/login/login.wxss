@@ -3,6 +3,9 @@
 .container {
   height: 100vh;
   background-color: grey;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
 }
 
 

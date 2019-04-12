@@ -17,7 +17,7 @@
 
     <view class="signup">
       <text class ="credentials">Don't have credentials please</text>
-      <navigator class="signuplink">Sign up</navigator>
+      <navigator class="signuplink" url="/pages/signup/signup">Sign up</navigator>
     </view>
 
 </view>

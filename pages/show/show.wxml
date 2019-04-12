@@ -17,31 +17,54 @@
 
 
       
-
+<view class="container">
 <view class="card-product">
-
  <view class="image">
     <image src="https://picsum.photos/200/300/?random" class="project-img">
-  </image>
+    </image>
+  <view Class="info">
+    </view>
+    <view class="box">Name: {{name}}
+    </view>
+    <view class="box">Description:{{description}}
+    </view>
+    <view class="box">Location {{location}}
+    </view>
+    <view class="box">Image: {{image}}
+    </view>
+    <view class="box">Category: {{category}}
+    </view>
+    <view class="box">Rewards{{rewards}}
+    </view>
+    <view class="box">Goal: {{amount_objective}}
+    </view>
+    <view class="box">Video: {{video}}
+    </view>
   </view>
-  <view>name: {{name}}</view>
-  <view>description:{{description}}</view>
-  <view>location {{location}}</view>
-  <view>image: {{image}}</view>
-  <view>category: {{category}}</view>
-  <view>rewards{{rewards}}</view>
-  <view>Goal: {{amount_objective}}</view>
-  <view>video: {{video}}</view>
 </view>
 
-<view>
-  <form bindsubmit="bindSubmit">
- <textarea value="{{amount}}" style="input-size"placeholder="Place your donation" class="box" name="amount" maxlength="-1" auto-height />
-    <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+
+  <view class="formcenter">
+    <view class="container">
+      <view class="total-raised">
+        <text class="totalraised">Total raised so far: 
+        </text>
+        <text class="amount-raised"> ${{total}}
+        </text>
+      </view> 
+      <text class="h3"> Pledge any amount to help bring this project to life
+      </text>
+    </view>   
+    <form bindsubmit="bindSubmit">
+      <textarea value="{{amount}}" style="input-size"placeholder="Place your donation i.e. US $100" class="box1" name="amount" maxlength="-1" auto-height />
+      <button  style="margin-bottom:20px "type="primary" form-type="submit" loading="{{loading}}">Submit
+      </button>
     </form>
+   
   </view>
 
-<view>Total raised : ${{total}} </view>
+</view>
+
 
 
 

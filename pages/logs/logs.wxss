@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   padding: 40rpx;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
 }
 .log-item {
   margin: 10rpx;
