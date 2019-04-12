@@ -1,11 +1,17 @@
 .general-session {
  display: flex;
  border-bottom: 1px solid rgba(0,0,0,0.2);
- box-shadow: 0 0 10px rgba(0,0,0,0.2);
  position: sticky;
  top: 0;
+ background: white;
 }
 
+
+.card-product {
+  border: 1px solid #e5e5e5;
+  width: 370px;
+  padding-bottom: 10px;
+}
 .logo {
  margin-left: 10pxal
 }
@@ -35,3 +41,51 @@
  border-radius: 5px;
  margin-left: 4px;
 }
+
+.project-img {
+  width: 100%;
+}
+
+.box {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.formcenter {
+  padding: 10px;
+  background: #ececec;
+  margin-top: 10px;
+  width: 350px;
+}
+
+.h3 {
+  font-size: 12px;
+  margin: -3px;
+  padding: 1px;
+}
+
+.box1 {
+  background: white;
+  padding: 10px;
+  margin-left: 1px;
+  width: 328px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.innertext {
+ text-align: center;
+}
+
+.total-raised{
+  display: flex;
+  align-items: center;
+}
+
+.totalraised {
+  font-size: 12px;
+}
+.amount-raised {
+  font-size: 16px;
+  font-weight: bold;
+}
+
